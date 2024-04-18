@@ -334,49 +334,40 @@ html{
     100%{width: 55%;}
 }
 
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2s comunicacion forwards;
+/* Animaciones para habilidades profesionales */
+.skills .skill .comunicacion {
+    animation: grow-bar-comunicacion 2s forwards;
 }
-@keyframes comunicacion {
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .trabajo{
-    width: 0%;
-    animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-    0%{width: 0%;}
-    100%{width: 70%;}
+@keyframes grow-bar-comunicacion {  /* Comunicación 80% */
+    to { width: 80%; }
 }
 
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2s creatividad forwards;
+.skills .skill .trabajo {
+    animation: grow-bar-trabajo 2s forwards;
 }
-@keyframes creatividad {
-    0%{width: 0%;}
-    100%{width: 99%;}
+@keyframes grow-bar-trabajo {  /* Trabajo en Equipo 70% */
+    to { width: 70%; }
 }
 
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2s dedicacion forwards;
+.skills .skill .creatividad {
+    animation: grow-bar-creatividad 2s forwards;
 }
-@keyframes dedicacion {
-    0%{width: 0%;}
-    100%{width: 65%;}
+@keyframes grow-bar-creatividad {  /* Creatividad 99% */
+    to { width: 99%; }
 }
 
-.skills .skill .proyect{
-    width: 0%;
-    animation: 2s proyect forwards;
+.skills .skill .dedicacion {
+    animation: grow-bar-dedicacion 2s forwards;
 }
-@keyframes proyect {
-    0%{width: 0%;}
-    100%{width: 94%;}
+@keyframes grow-bar-dedicacion {  /* Dedicación 85% */
+    to { width: 85%; }
+}
+
+.skills .skill .project {
+    animation: grow-bar-project 2s forwards;
+}
+@keyframes grow-bar-project {  /* Project Management 94% */
+    to { width: 94%; }
 }
 /* SECCION CURRICULUM */
 .curriculum{
