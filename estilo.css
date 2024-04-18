@@ -268,41 +268,61 @@ html{
     right: -15px;
     font-size: 14px;
 }
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
+/* Animaciones para habilidades técnicas */
+.skills .skill .cpp {
+    animation: grow-bar 2s forwards;
 }
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
+@keyframes grow-bar {  /* C++ 80% */
+    to { width: 80%; }
 }
 
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
+.skills .skill .csharp {
+    animation: grow-bar-csharp 2s forwards;
 }
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 89%;}
+@keyframes grow-bar-csharp {  /* C# 60% */
+    to { width: 60%; }
 }
 
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2s photoshop forwards;
+.skills .skill .php {
+    animation: grow-bar-php 2s forwards;
 }
-@keyframes photoshop {
-    0%{width: 0%;}
-    100%{width: 95%;}
+@keyframes grow-bar-php {  /* PHP 60% */
+    to { width: 60%; }
 }
 
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
+.skills .skill .javascript {
+    animation: grow-bar-javascript 2s forwards;
 }
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 81%;}
+@keyframes grow-bar-javascript {  /* JavaScript 50% */
+    to { width: 50%; }
+}
+
+.skills .skill .html {
+    animation: grow-bar-html 2s forwards;
+}
+@keyframes grow-bar-html {  /* HTML 80% */
+    to { width: 80%; }
+}
+
+.skills .skill .python {
+    animation: grow-bar-python 2s forwards;
+}
+@keyframes grow-bar-python {  /* Python 20% */
+    to { width: 20%; }
+}
+
+.skills .skill .mysql {
+    animation: grow-bar-mysql 2s forwards;
+}
+@keyframes grow-bar-mysql {  /* MySQL 90% */
+    to { width: 90%; }
+}
+
+.skills .skill .wordpress {
+    animation: grow-bar-wordpress 2s forwards;
+}
+@keyframes grow-bar-wordpress {  /* WordPress 90% */
+    to { width: 90%; }
 }
 
 .skills .skill .drupal{
